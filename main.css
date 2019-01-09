@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Sketch;
+    src: url('./fonts/CabinSketch-Regular.ttf');
+    font-weight: normal;
+}
+
+body {
+    background: #000000;
+    padding: 25px 100px 50px 100px;
+}
+
+h6 {
+    color: #ffffff;
+    font-family: Sketch, monospace;
+    font-size: 2rem;
+}
+
+pre {
+    /* padding: 0 10px; */
+    height: 350px;
+    position:relative;
+    padding: 0 20px;
+	margin: .5em 0;
+}
+
+pre,
+code {
+    font-family: monospace, monospace;
+}
+
+pre>code {
+    display: block;
+    padding: 0;
+    margin:0;
+    word-wrap: break-word;
+}
+
+code {
+    position:absolute;
+    top:0;
+    right:0;
+    height: 350px;
+    width:860px;
+    padding: 0;
+    margin:0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow-y: auto;
+}
+
+pre,
+input,
+button {
+    background-color: rgb(42, 32, 32);
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    border-radius: 5px;
+    /* margin-bottom:30px; */
+}
+
+input,
+button {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+input {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    font-family: Sketch, monospace;
+}
+
+.container {
+    width: 900px;
+    display: grid;
+    justify-items: stretch;
+    margin: auto auto;
+}
+
+.arena {
+    /**/
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.console {
+    /**/
+    /*background-color: aqua;*/
+}
+
+.controller {
+    /**/
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+input {
+    flex-grow: 2;
+    background-color: rgb(32, 32, 32);
+}
+
+button {
+    flex-grow: 1;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+    background-color: rgb(32, 32, 32);
+}
+
+#runCode {
+    margin: 0px 5px;
+}
